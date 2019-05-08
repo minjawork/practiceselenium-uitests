@@ -1,0 +1,25 @@
+{
+  "name": "uitests",
+  "version": "1.0.0",
+  "description": "This is instruction for project setup. How to prepare env for running UI tests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minjawork/uitests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minjawork/uitests/issues"
+  },
+  "homepage": "https://github.com/minjawork/uitests#readme",
+  "devDependencies": {
+    "@wdio/cli": "^5.8.3",
+    "selenium-standalone": "^6.16.0",
+    "webdriverio": "^5.8.3"
+  }
+}
