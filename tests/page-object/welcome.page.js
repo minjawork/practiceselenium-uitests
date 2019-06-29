@@ -5,6 +5,9 @@ class WelcomePage {
   get menuSideBar() { return $('[data-pageid="00000000-0000-0000-0000-000009816342"]'); }
   get letsTalkTea() { return $('[href="let-s-talk-tea.html"]'); }
   get checkOut() { return $('[href="check-out.html"]'); }
+  get herbalTeaButton() { return $('#wsb-button-00000000-0000-0000-0000-000450914890'); }
+  get looseTeaButton() { return $('#wsb-button-00000000-0000-0000-0000-000450914897'); }
+  get flavoredButton() { return $('#wsb-button-00000000-0000-0000-0000-000450914899');}
   get homePageUrl () {
     const currentUrl = ("http://www.practiceselenium.com/");
     return currentUrl;

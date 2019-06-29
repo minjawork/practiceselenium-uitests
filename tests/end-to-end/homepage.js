@@ -30,4 +30,19 @@ describe('Home page tests', function() {
          expect(browser.getUrl()).to.equal(WelcomePage.checkOutUrl);
          browser.back();
     });
+
+    it("Home page - Tea Collections", function(){
+
+          WelcomePage.herbalTeaButton.click();
+          expect(browser.getUrl()).to.equal(WelcomePage.menuUrl);
+          browser.back();
+
+          WelcomePage.looseTeaButton.click();
+          expect(browser.getUrl()).to.equal(WelcomePage.menuUrl);
+          browser.back();
+
+          WelcomePage.flavoredButton.click();
+          expect(browser.getUrl()).to.equal(WelcomePage.menuUrl);
+          browser.back();
+    });
 });
