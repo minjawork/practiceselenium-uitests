@@ -13,5 +13,21 @@ describe('Home page tests', function() {
          WelcomePage.menuSideBar.isDisplayed();
          WelcomePage.letsTalkTea.isDisplayed();
          WelcomePage.checkOut.isDisplayed();
+
+         WelcomePage.passion.click();
+         expect(browser.getUrl()).to.equal(WelcomePage.ourPassionUrl);
+         browser.back();
+
+         WelcomePage.menuSideBar.click();
+         expect(browser.getUrl()).to.equal(WelcomePage.menuUrl);
+         browser.back();
+
+         WelcomePage.letsTalkTea.click();
+         expect(browser.getUrl()).to.equal(WelcomePage.letsTalkUrl);
+         browser.back();
+
+         WelcomePage.checkOut.click();
+         expect(browser.getUrl()).to.equal(WelcomePage.checkOutUrl);
+         browser.back();
     });
 });

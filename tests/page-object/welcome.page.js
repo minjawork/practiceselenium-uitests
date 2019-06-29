@@ -9,6 +9,22 @@ class WelcomePage {
     const currentUrl = ("http://www.practiceselenium.com/");
     return currentUrl;
   };
+  get ourPassionUrl() {
+    const currentUrl = ("http://www.practiceselenium.com/our-passion.html");
+    return currentUrl;
+  }
+  get menuUrl() {
+    const currentUrl = ("http://www.practiceselenium.com/menu.html");
+    return currentUrl;
+  }
+  get letsTalkUrl() {
+    const currentUrl = "http://www.practiceselenium.com/let-s-talk-tea.html";
+    return currentUrl;
+  }
+  get checkOutUrl() {
+    const currentUrl = "http://www.practiceselenium.com/check-out.html";
+    return currentUrl;
+  }
 }
 
 export default new WelcomePage();
