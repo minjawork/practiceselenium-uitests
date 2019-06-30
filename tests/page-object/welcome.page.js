@@ -8,6 +8,8 @@ class WelcomePage {
   get herbalTeaButton() { return $('#wsb-button-00000000-0000-0000-0000-000450914890'); }
   get looseTeaButton() { return $('#wsb-button-00000000-0000-0000-0000-000450914897'); }
   get flavoredButton() { return $('#wsb-button-00000000-0000-0000-0000-000450914899');}
+  get buttonCheckOutFirst() { return $('#wsb-button-00000000-0000-0000-0000-000451955160');}
+  get buttonCheckOutSecond() { return $('#wsb-button-00000000-0000-0000-0000-000451959280')}
   get homePageUrl () {
     const currentUrl = ("http://www.practiceselenium.com/");
     return currentUrl;

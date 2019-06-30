@@ -45,4 +45,17 @@ describe('Home page tests', function() {
           expect(browser.getUrl()).to.equal(WelcomePage.menuUrl);
           browser.back();
     });
+
+    it.only("Menu option - Check Out buttons", function(){
+          
+          WelcomePage.menuSideBar.click();
+          WelcomePage.buttonCheckOutFirst.click();
+          expect(browser.getUrl()).to.equal(WelcomePage.checkOutUrl);
+          browser.back();
+
+          WelcomePage.menuSideBar.click();
+          WelcomePage.buttonCheckOutSecond.click();
+          expect(browser.getUrl()).to.equal(WelcomePage.checkOutUrl);
+          browser.back();
+    })
 });
