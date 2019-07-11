@@ -30,7 +30,6 @@ browser.url('./');
 
          WelcomePage.checkOut.click();
          expect(browser.getUrl()).to.equal(WelcomePage.checkOutUrl);
-         browser.back();
     });
 
     it("02 Home page - Tea Collections", function(){
