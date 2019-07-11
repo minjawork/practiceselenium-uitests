@@ -47,5 +47,8 @@
     "wdio-chromedriver-service": "^5.0.2",
     "wdio-visual-regression-service": "^0.8.0",
     "webdriverio": "^5.6.2"
+  },
+  "dependencies": {
+    "wdio-timeline-reporter": "^5.0.10"
   }
 }

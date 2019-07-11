@@ -1,5 +1,6 @@
 # Ignore dependencies
 node_modules/
+reports/
 package-lock.json
 
 # Ignore system files
