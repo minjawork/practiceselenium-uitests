@@ -2,9 +2,11 @@ import WelcomePage from '../page-object/welcome.page';
 
 describe('Home page tests', function() {
 
+browser.url('./');
+
     it('01 Home page - welcome sidebar', function() {
 
-        browser.url('./');
+
         const currentUrl = browser.getUrl();
         expect(currentUrl).to.equal(WelcomePage.homePageUrl);
 
@@ -31,7 +33,7 @@ describe('Home page tests', function() {
          browser.back();
     });
 
-    it("Home page - Tea Collections", function(){
+    it("02 Home page - Tea Collections", function(){
 
           WelcomePage.herbalTeaButton.click();
           expect(browser.getUrl()).to.equal(WelcomePage.menuUrl);
@@ -46,8 +48,8 @@ describe('Home page tests', function() {
           browser.back();
     });
 
-    it.only("Menu option - Check Out buttons", function(){
-          
+    it("03 Menu option - Check Out buttons", function(){
+
           WelcomePage.menuSideBar.click();
           WelcomePage.buttonCheckOutFirst.click();
           expect(browser.getUrl()).to.equal(WelcomePage.checkOutUrl);
@@ -56,6 +58,5 @@ describe('Home page tests', function() {
           WelcomePage.menuSideBar.click();
           WelcomePage.buttonCheckOutSecond.click();
           expect(browser.getUrl()).to.equal(WelcomePage.checkOutUrl);
-          browser.back();
     })
 });
